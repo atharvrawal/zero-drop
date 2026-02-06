@@ -5,7 +5,7 @@ use std::time::Instant;
 fn main() {
     let mut sock = TcpStream::connect("127.0.0.1:9000").unwrap();
 
-    let buf = vec![0u8; 512 * 1024]; // 512 KB
+    let buf = vec![0u8; 1024 * 1024]; // 512 KB
     let start = Instant::now();
     let mut sent: u64 = 0;
 
